@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    /* Content */
+
+    --content-primary: #FFFFFF;
+    --content-secondary: #C7C9CC;
+    --content-tertiary: #D9D9D9;
+    --content-brand: #C58DE7;
+    --color-inverse: #030203;
+
+    /* background */
+
+    --bg-primary: #020202;
+    --bg-secondary: #111012;
+    --bg-tertiary: #24222E;
+    --bg-brand: #C58DE7;
+    --bg-gray: #3D3D3D;
+
+    /* acent */
+
+    --accent-pink: #D586E0;
+    --accent-blue: #91A1FA;
+    --accent-green: #77C0A;
+    --accent-lime: #D1DC97;
+    --accent-red: #E9A9B3;
+
+    /* gradient */
+    --gradient-border: #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%;
+    --gradient-bg: #D586E0 0%, #91A1FA 98.93%;
+    --gradient-content: #C7C9CC 0%, #3D3D3D 100%;
+
+
+    /* familias do projeto 
+    Roboto Mono - overline
+    Roboto Flex - Paragrafos
+    Sora - Display
+    */
+
+    --pm: 14px;
+    --ps: 12px;
+    --label-medium: 20px;
+    --label-small: 16px;
+}
+
+
+body{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 16px;
+    background-color: var(--bg-primary);
+    color: var(--content-primary);
+}
