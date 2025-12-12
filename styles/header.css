@@ -1,0 +1,23 @@
+header {
+    margin-bottom: 42px;
+
+    width: 319px;
+    height: 104px;
+
+    & .intro {
+        p {
+            background: var(--gradient-content);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            font: var(--roboto-Mono);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        & h1 {
+            font: var(--display-md);
+            text-transform: uppercase;
+        }
+    }
+}
