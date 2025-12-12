@@ -82,9 +82,10 @@ main {
         height: 38px;
     }
 
-    & h2 {
+    & h3 {
         font: var(--display-sm);
-        letter-spacing: -4%;
+        font-size: 24px;
+        letter-spacing: -1px;
     }
 }
 
