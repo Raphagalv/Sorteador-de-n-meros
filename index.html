@@ -30,63 +30,60 @@
             </div>
         </header>
 
-        <section>
+
+        <form>
             <div class="info-sorteio">
-                <h3>QUERO SORTEAR</h3>
+                <h3>QUERO SORTEAR:</h3>
                 <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É
                     rápido e fácil!</p>
             </div>
-            <form id="sorteio">
-                <div class="inputs">
-                    <div class="campo">
-                        <label for="qtd">NÚMEROS</label>
-                        <input type="number" id="qtd" min="1" value="2">
-                    </div>
 
-                    <div class="campo">
-                        <label for="min">DE</label>
-                        <input type="number" id="min" value="1">
-                    </div>
-
-                    <div class="campo">
-                        <label for="max">DE</label>
-                        <input type="number" id="max" value="100">
-                    </div>
+            <div class="inputs">
+                <div class="campo">
+                    <label for="qtd">NÚMEROS</label>
+                    <input type="number" id="qtd" min="1" value="2">
                 </div>
 
-                <!-- TOGGLE -->
-                <div class="toggle">
-                    <input type="checkbox" id="no-repeat">
-                    <label for="no-repeat">Não repetir número</label>
+                <div class="campo">
+                    <label for="min">DE</label>
+                    <input type="number" id="min" value="1">
                 </div>
 
-                <!-- BOTÃO -->
-                <button type="submit" class="btn-sortear">
-                    SORTEAR →
-                </button>
-
-
-                <div class="inputs hidden">
-                    <h4>RESULTADO DO SORTEIO</h4>
-
-                    <div class="campo">
-                        <label for="result">NÚMEROS SORTEADOS</label>
-                        <input type="text" id="result" readonly>
-                    </div>
+                <div class="campo">
+                    <label for="max">DE</label>
+                    <input type="number" id="max" value="100">
                 </div>
+            </div>
+            <!-- TOGGLE -->
+            <div class="toggle">
+                <input type="checkbox" id="no-repeat">
+                <label for="no-repeat">Não repetir número</label>
+            </div>
+    
+            <!-- BOTÃO -->
+            <button type="submit" class="btn-sortear">
+                SORTEAR →
+            </button>
+        </form>
 
 
-                <div>
-                    <button type="submit" class="btn-sortear">
-                        SORTEAR NOVAMENTE
-                    </button>
-                    <img src="assets/replay.svg" alt="">
-                </div>
+
+        <!-- <div class="inputs hidden">
+            <h4>RESULTADO DO SORTEIO</h4>
+
+            <div class="campo">
+                <label for="result">NÚMEROS SORTEADOS</label>
+                <input type="text" id="result" readonly>
+            </div>
+        </div>
 
 
-
-            </form>
-        </section>
+        <div>
+            <button type="submit" class="btn-sortear hidden">
+                SORTEAR NOVAMENTE
+                <img src="assets/replay.svg" alt="">
+            </button>
+        </div> -->
 
         <section>
             <div>
