@@ -1,0 +1,133 @@
+form {
+    margin-bottom: 80px;
+    width: 319px;
+    height: auto;
+
+    & .info-sorteio {
+        margin-bottom: 40px;
+
+        & h3 {
+            font: var(--label-medium);
+        }
+
+        & p {
+            color: var(--content-tertiary);
+        }
+    }
+
+
+    & .inputs {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 20px;
+
+        & .campo {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+
+            & label {
+                font: var(--ps);
+                text-transform: uppercase;
+                color: var(--content-secondary);
+                text-align: center;
+            }
+
+            & input {
+                width: 100%;
+                height: 48px;
+                background-color: var(--bg-secondary);
+                border: none;
+                border-radius: 8px;
+
+                font: var(--label-medium);
+                color: var(--content-primary);
+                text-align: center;
+
+                outline: none;
+
+
+            }
+        }
+
+        & input::-webkit-inner-spin-button,
+        & input::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+    }
+
+    & .toggle {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 40px;
+
+        & label {
+            position: relative;
+            padding-left: 44px;
+            cursor: pointer;
+            font: var(--pm);
+            color: var(--content-secondary);
+        }
+
+        & label::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            width: 36px;
+            height: 20px;
+            background: var(--gradient-bg);
+            border-radius: 999px;
+        }
+
+        & label::after {
+            content: "";
+            position: absolute;
+            left: 2px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            width: 16px;
+            height: 16px;
+            background-color: var(--content-primary);
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        & input:checked+label::before {
+            background-color: var(--accent-primary);
+        }
+
+        & input:checked+label::after {
+            left: 18px;
+        }
+
+        & input {
+            display: none;
+        }
+    }
+
+
+
+
+
+
+    & .btn-sortear {
+        width: 100%;
+        height: 56px;
+        background-color: var(--bg-tertiary);
+        border: none;
+        border-radius: 8px;
+        font: var(--label-medium);
+        color: var(--content-primary);
+
+        cursor: pointer;
+    }
+}
