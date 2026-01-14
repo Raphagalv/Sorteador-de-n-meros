@@ -31,7 +31,7 @@
         </header>
 
 
-        <form>
+        <form id="form-sorteio">
             <div class="info-sorteio">
                 <h3>QUERO SORTEAR:</h3>
                 <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É
@@ -59,7 +59,7 @@
                 <input type="checkbox" id="no-repeat">
                 <label for="no-repeat">Não repetir número</label>
             </div>
-    
+
             <!-- BOTÃO -->
             <button type="submit" class="btn-sortear">
                 SORTEAR →
@@ -68,25 +68,23 @@
 
 
 
-        <!-- <div class="inputs hidden">
+        <section id="resultado" class="inputs hidden">
             <h4>RESULTADO DO SORTEIO</h4>
 
             <div class="campo">
-                <label for="result">NÚMEROS SORTEADOS</label>
-                <input type="text" id="result" readonly>
+                <label>NÚMEROS SORTEADOS</label>
+                <div id="numeros" class="resultado-numeros"></div>
             </div>
-        </div>
-
-
-        <div>
-            <button type="submit" class="btn-sortear hidden">
-                SORTEAR NOVAMENTE
-                <img src="assets/replay.svg" alt="">
-            </button>
-        </div> -->
+            
+                <button id="sortear-novamente" type="button" class="btn-sortear">
+                    SORTEAR NOVAMENTE
+                    <img src="assets/replay.svg" alt="">
+                </button>
+            
+        </section>
 
         <section>
-            <div>
+            <div class="flex-row">
                 <div>
                     <img src="assets/talkperson.svg" alt="">
                 </div>
@@ -97,7 +95,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="flex-row">
                 <div>
                     <img src="assets/talkperson.svg" alt="">
                 </div>
@@ -108,6 +106,7 @@
             </div>
         </section>
 
+        <script src="index.js"></script>
     </main>
 </body>
 

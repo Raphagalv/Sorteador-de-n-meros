@@ -131,3 +131,9 @@ form {
         cursor: pointer;
     }
 }
+
+.resultado-numeros {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}

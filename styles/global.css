@@ -32,7 +32,7 @@
 
     /* gradient */
     --gradient-border: #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%;
-    --gradient-bg: #D586E0 0%, #91A1FA 98.93%;
+    --gradient-bg: linear-gradient(90deg, #D586E0 0%, #91A1FA 98.93%);
     --gradient-content: linear-gradient(90deg, #C7C9CC 0%, #3D3D3D 100%);
 
 
@@ -59,12 +59,11 @@
 body{
     background-color: var(--bg-primary);
     font-family: 'Roboto Flex', sans-serif;
-    font: var(--pl);
+    font: var(--pm);
     color: var(--content-primary);
 }
 
 main {
-    border: 2px solid white;
     max-width: 390px;
     height: 100vh;
     padding-block: 44px;

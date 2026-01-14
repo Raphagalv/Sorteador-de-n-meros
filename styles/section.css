@@ -1,0 +1,59 @@
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 44px;
+    & h4 {
+        font: var(--label-medium);
+    }
+
+    & label {
+        font: var(--label-sm);
+    }
+    & .resultado-numeros{
+        margin-top: 20px;
+    }
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+
+section #sortear-novamente {
+    width: 100%;
+    height: 56px;
+    background-color: var(--bg-tertiary);
+    border: none;
+    border-radius: 8px;
+    font: var(--label-medium);
+    color: var(--content-primary);
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+section .numero-sorteado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 50%;
+    height: 48px;
+    margin: auto;
+    background-color: var(--bg-secondary);
+    border: none;
+    border-radius: 8px;
+
+    font: var(--label-medium);
+    color: var(--content-primary);
+    text-align: center;
+
+    outline: none;
+}
