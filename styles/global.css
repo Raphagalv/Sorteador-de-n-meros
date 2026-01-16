@@ -68,6 +68,7 @@ main {
     height: 100vh;
     padding-block: 44px;
     padding-inline: 25px;
+    margin: auto;
 }
 
 .logo {
@@ -90,4 +91,10 @@ main {
 
 .hidden {
     display: none;
+}
+
+@media (min-width: 768px) {
+    main {
+        /* margin: auto; */
+    }
 }
