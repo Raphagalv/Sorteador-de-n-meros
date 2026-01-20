@@ -5,7 +5,7 @@
 }
 
 :root {
-    
+
     /* Content */
 
     --content-primary: #FFFFFF;
@@ -56,7 +56,7 @@
 }
 
 
-body{
+body {
     background-color: var(--bg-primary);
     font-family: 'Roboto Flex', sans-serif;
     font: var(--pm);
@@ -64,6 +64,7 @@ body{
 }
 
 main {
+    width: 100%;
     max-width: 390px;
     height: 100vh;
     padding-block: 44px;
@@ -77,6 +78,7 @@ main {
     justify-content: center;
     gap: 3.5px;
     margin-bottom: 40px;
+
     & img {
         width: 38px;
         height: 38px;
@@ -95,6 +97,42 @@ main {
 
 @media (min-width: 768px) {
     main {
-        /* margin: auto; */
+        max-width: 1080px;
+        padding-block: 80px;
+        padding-inline: 66px;
+    }
+
+    .logo {
+        justify-content: left;
+        margin-bottom: 40px;
+
+        & img {
+            padding: 5px;
+            width: 38px;
+            height: 38px;
+        }
+
+        & h3 {
+            font: var(--display-sm);
+            font-size: 24px;
+            letter-spacing: -1px;
+            padding: 5px;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    main {
+        max-width: 1200px;
+        padding-block: 80px;
+        padding-inline: 66px;
+    }
+}
+
+@media (min-width: 1980px) {
+    main {
+        max-width: 1400px;
+        padding-block: 80px;
+        padding-inline: 66px;
     }
 }

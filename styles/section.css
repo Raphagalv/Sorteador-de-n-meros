@@ -57,3 +57,11 @@ section .numero-sorteado {
 
     outline: none;
 }
+
+
+@media (min-width: 768px) {
+    section #duvidas{
+        padding-block: 0px;
+        margin-top: 0px;
+    }
+}

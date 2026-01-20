@@ -1,11 +1,10 @@
 header {
     margin-bottom: 42px;
 
-    width: 319px;
-    height: 104px;
-
+    width: 100%;
+    
     & .intro {
-        p {
+        & p {
             background: var(--gradient-content);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -21,3 +20,14 @@ header {
         }
     }
 }
+
+
+@media (min-width: 768px) {
+    header {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1980px) {}

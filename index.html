@@ -19,92 +19,94 @@
 
 <body>
     <main>
-        <div class="logo">
-            <img src="assets/logo.svg" alt="">
-            <h3>NUMBERS</h3>
-        </div>
-        <header>
-            <div class="intro">
-                <p>ONLINE - GRATUITO</p>
-                <h1>SORTEADOR DE NÚMEROS</h1>
+        <div class="grid">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="">
+                <h3>NUMBERS</h3>
             </div>
-        </header>
+            <header>
+                <div class="intro">
+                    <p>ONLINE - GRATUITO</p>
+                    <h1>SORTEADOR DE NÚMEROS</h1>
+                </div>
+            </header>
 
 
-        <form id="form-sorteio">
-            <div class="info-sorteio">
-                <h3>QUERO SORTEAR:</h3>
-                <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É
-                    rápido e fácil!</p>
-            </div>
-
-            <div class="inputs">
-                <div class="campo">
-                    <label for="qtd">NÚMEROS</label>
-                    <input type="number" id="qtd" min="1" value="2">
+            <form id="form-sorteio">
+                <div class="info-sorteio">
+                    <h3>QUERO SORTEAR:</h3>
+                    <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É
+                        rápido e fácil!</p>
                 </div>
 
-                <div class="campo">
-                    <label for="min">DE</label>
-                    <input type="number" id="min" value="1">
+                <div class="inputs">
+                    <div class="campo">
+                        <label for="qtd">NÚMEROS</label>
+                        <input type="number" id="qtd" min="1" value="2">
+                    </div>
+
+                    <div class="campo">
+                        <label for="min">DE</label>
+                        <input type="number" id="min" value="1">
+                    </div>
+
+                    <div class="campo">
+                        <label for="max">DE</label>
+                        <input type="number" id="max" value="100">
+                    </div>
+                </div>
+                <!-- TOGGLE -->
+                <div class="toggle">
+                    <input type="checkbox" id="no-repeat">
+                    <label for="no-repeat">Não repetir número</label>
                 </div>
 
+                <!-- BOTÃO -->
+                <button type="submit" class="btn-sortear">
+                    SORTEAR →
+                </button>
+            </form>
+
+
+
+            <section id="resultado" class="inputs hidden">
+                <h4>RESULTADO DO SORTEIO</h4>
+
                 <div class="campo">
-                    <label for="max">DE</label>
-                    <input type="number" id="max" value="100">
+                    <label>NÚMEROS SORTEADOS</label>
+                    <div id="numeros" class="resultado-numeros"></div>
                 </div>
-            </div>
-            <!-- TOGGLE -->
-            <div class="toggle">
-                <input type="checkbox" id="no-repeat">
-                <label for="no-repeat">Não repetir número</label>
-            </div>
 
-            <!-- BOTÃO -->
-            <button type="submit" class="btn-sortear">
-                SORTEAR →
-            </button>
-        </form>
-
-
-
-        <section id="resultado" class="inputs hidden">
-            <h4>RESULTADO DO SORTEIO</h4>
-
-            <div class="campo">
-                <label>NÚMEROS SORTEADOS</label>
-                <div id="numeros" class="resultado-numeros"></div>
-            </div>
-            
                 <button id="sortear-novamente" type="button" class="btn-sortear">
                     SORTEAR NOVAMENTE
                     <img src="assets/replay.svg" alt="">
                 </button>
-            
-        </section>
 
-        <section>
-            <div class="flex-row">
-                <div>
-                    <img src="assets/talkperson.svg" alt="">
-                </div>
-                <div>
-                    <p>Como funciona o sorteador de números?</p>
-                    <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo
-                        especificado pelo usuário.</p>
-                </div>
-            </div>
+            </section>
 
-            <div class="flex-row">
-                <div>
-                    <img src="assets/talkperson.svg" alt="">
+            <section id="duvidas">
+                <div class="flex-row">
+                    <div>
+                        <img src="assets/talkperson.svg" alt="">
+                    </div>
+                    <div>
+                        <p>Como funciona o sorteador de números?</p>
+                        <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo
+                            especificado pelo usuário.</p>
+                    </div>
                 </div>
-                <div>
-                    <p>Posso escolher o intervalo dos números?</p>
-                    <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+
+                <div class="flex-row">
+                    <div>
+                        <img src="assets/talkperson.svg" alt="">
+                    </div>
+                    <div>
+                        <p>Posso escolher o intervalo dos números?</p>
+                        <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <script src="index.js"></script>
     </main>

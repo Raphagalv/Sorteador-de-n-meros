@@ -1,6 +1,6 @@
 form {
     margin-bottom: 80px;
-    width: 319px;
+    width: 100%;
     height: auto;
 
     & .info-sorteio {
@@ -136,4 +136,18 @@ form {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+}
+
+
+@media (min-width: 1280px) {
+    
+}
+@media (min-width: 1980px) {
+    main {
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
 }

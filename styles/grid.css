@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4rem;
+        row-gap: 1.5rem;
+
+        & header {
+            grid-column: 1;
+        }
+
+        & #duvidas {
+            grid-column: 1;
+        }
+
+        & #form-sorteio,
+        #resultado {
+            grid-column: 2;
+        }
+    }
+}
