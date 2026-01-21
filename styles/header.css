@@ -24,8 +24,17 @@ header {
 
 @media (min-width: 768px) {
     header {
-    margin-bottom: 0px;
-  }
+        height: 300px;
+        padding: 40px;
+        justify-content: center;
+        & .intro {
+
+            & h1 {
+                font-size: 48px;
+                letter-spacing: 1px;
+            }
+        }
+    }
 }
 
 @media (min-width: 1280px) {}

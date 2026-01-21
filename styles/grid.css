@@ -1,21 +1,28 @@
 @media (min-width: 768px) {
     .grid {
         display: grid;
+        /* Define duas colunas e permite que as linhas se ajustem ao conteúdo */
         grid-template-columns: 1fr 1fr;
-        column-gap: 4rem;
-        row-gap: 1.5rem;
+        column-gap: 32px; /* Ajuste conforme seu design */
+        align-items: start; /* Alinha tudo no topo da célula */
+    }
 
-        & header {
-            grid-column: 1;
-        }
+    header {
+        grid-column: 1;
+        grid-row: 1; /* Ocupa a primeira linha da esquerda */
+        margin-bottom: 40px; /* Controle aqui a distância para as dúvidas */
+    }
 
-        & #duvidas {
-            grid-column: 1;
-        }
+    #duvidas {
+        grid-column: 1;
+        grid-row: 2; /* Ocupa a segunda linha da esquerda, logo abaixo do header */
+    }
 
-        & #form-sorteio,
-        #resultado {
-            grid-column: 2;
-        }
+    #form-sorteio, 
+    #resultado {
+        grid-column: 2;
+        /* Faz o formulário começar na linha 1 e estender por 2 linhas */
+        grid-row: 1 / span 2;
+        align-self: center;
     }
 }

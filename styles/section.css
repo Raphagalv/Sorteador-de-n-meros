@@ -60,8 +60,9 @@ section .numero-sorteado {
 
 
 @media (min-width: 768px) {
-    section #duvidas{
-        padding-block: 0px;
-        margin-top: 0px;
+    section#duvidas {
+        height: 300px;
+        justify-content: center;
+        padding: 40px;
     }
 }
