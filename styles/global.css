@@ -67,10 +67,12 @@ body {
 main {
     width: 100%;
     max-width: 390px;
-    height: 100vh;
+    min-height: 100vh;
     padding-block: 44px;
     padding-inline: 25px;
     margin: auto;
+
+    
 }
 
 header .logo {
@@ -101,6 +103,9 @@ header .logo {
         max-width: 1080px;
         padding-block: 80px;
         padding-inline: 66px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     header .logo {
